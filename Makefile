@@ -4,7 +4,7 @@ COMPILER_PREFIX = arm-linux-gnueabi-
 CC = $(COMPILER_PREFIX)gcc
 LD = $(COMPILER_PREFIX)ld
 
-CFLAGS = -ansi -pedantic -Wall -Wextra -march=armv6 -msoft-float -fPIC -mapcs-frame
+CFLAGS = -ansi -pedantic -Wall -Wextra -march=armv7-a -msoft-float -fPIC -mapcs-frame
 LDFLAGS = -N -Ttext=0x10000
 
 BUILDDIR = build
