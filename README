@@ -1,0 +1,11 @@
+
+In order to test the image, use the following steps:
+1) Build kernel image using
+   make all
+2) Create NAND image using
+   ./scripts/create_image.sh
+3) Run image on qemu using
+   ./scripts/run_image.sh
+4) It starts booting and asks to press any key to stop autoboot. Press any key.
+   Then, enter the following command to copy image from nand and to execute it
+   nand read 0x80100000 0x280000 0x400000; go 0x80100000
